@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.main-div {
+  height: 100vh;
+  overflow: hidden;
+}
+.center-div {
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 6px 4px 14px rgb(1, 123, 194);
+
+  width: 50%;
+  border: 1px solid black;
+
+  position: relative;
+  top: 30px;
+  margin: auto;
+  height: 700px;
+  border-radius: 2rem;
+  display: block;
+}
+.header-div {
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  padding: 10px 0px;
+  top: 15px;
+  width: 100%;
+  color: white;
+
+  margin: auto;
+
+  text-align: center;
+}
+
+.header-div > h1 {
+  font-family: Arial;
+  font-variant: small-caps;
+  transition: all 0.4 ease-in-out;
+}
+.header-div > h1::hover {
+  opacity: 0.8;
+  transition: all 0.4 ease-in-out;
+}
+.header-div > h1::selection {
+  background-color: transparent;
+}
+
+.header-div .heading {
+  font-weight: bolder;
+  font-size: 30px;
+  position: relative;
+  top: 5px;
+}
+
+.Content-div {
+  position: relative;
+  top: 50px;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  left: 50px;
+  overflow: hidden;
+}
+.Content-div input {
+  padding: 5px 15px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  font-size: 20px;
+  outline: none;
+  border-bottom: 2px solid rgb(219, 219, 219);
+  width: 60%;
+  background: transparent;
+  transition: all 0.5s ease-in-out;
+}
+.Content-div input:focus {
+  width: 70%;
+  transition: all 0.5s ease-in-out;
+
+  border: none;
+  border-bottom: 2px solid white;
+}
+.center-div input::placeholder {
+  color: white;
+  width: fit-content;
+  position: relative;
+  left: 20%;
+  display: block;
+  opacity: 0.6;
+  font-weight: bolder;
+  font-size: 17px;
+  font-family: Freehand;
+}
+
+.btn {
+  border: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+.btn > button {
+  cursor: pointer;
+  background-color: rgb(112, 112, 221);
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  border-color: transparent;
+  border-radius: 50%;
+  font-weight: bolder;
+  color: white;
+  transition: all 0.5s ease-in;
+}
+.btn button:hover {
+  transition: all 0.5s ease-in;
+
+  background-color: rgb(10, 189, 10);
+}
+.wrapper {
+  width: 70%;
+}
+ol li {
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-family: cursive;
+  font-size: 20px;
+  opacity: 0.9;
+  width: fit-content;
+  padding-right: 30px;
+  overflow-wrap: break-word;
+  padding: 4px 0px;
+  word-break: break-all;
+}
+ol li:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.todo_style {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 2rem;
+  align-items: center;
+  font-family: cursive;
+}
+
+.author {
+  text-align: center;
+  margin-top: 20rem;
+  color: white;
+  font-weight: bolder;
+  font-size: 24px;
+  font-family: Freehand;
+  margin-right: 4rem;
+  opacity: 0.5;
+}
+.author::after {
+  content: "By Zlaam";
+
+  opacity: 0.7;
+}
+.inputTodo {
+  position: relative;
+  left: 30px;
+  width: 80%;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 900px) {
+  .main-div {
+    display: block;
+    height: 90vh;
+  }
+  .center-div {
+    height: 100%;
+    display: block;
+    width: 90%;
+  }
+  .center-div input::placeholder {
+    color: white;
+
+    opacity: 0.6;
+    width: fit-content;
+    position: relative;
+    left: 1%;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .Content-div {
+    display: block;
+    position: relative;
+    top: 50px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    left: 40px;
+  }
+}

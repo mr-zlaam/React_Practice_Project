@@ -1,0 +1,23 @@
+.blury {
+  left: 35rem;
+  top: 8rem;
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  background-color: gray;
+  filter: blur(100px);
+  border-radius: 50%;
+  opacity: 0.6;
+  overflow: hidden;
+}
+
+@media (max-width: 1068px) {
+  .blury {
+    position: absolute;
+    left: 7rem;
+    top: 4rem;
+    width: 100px;
+    margin: auto;
+    overflow: hidden;
+  }
+}

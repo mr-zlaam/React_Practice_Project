@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Freehand&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Shrikhand&display=swap");
+.h-wrapper {
+  background-color: var(--black);
+
+  width: 100%;
+  z-index: 1;
+
+  overflow: hidden;
+}
+.h-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}
+.logo h1 {
+  font-family: "Freehand";
+
+  font-weight: bold;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.logo h1:hover {
+  transition: all 0.3s ease-in-out;
+  color: white;
+  opacity: 1;
+}
+.h-menus a {
+  color: white;
+  opacity: 0.8;
+  text-decoration: none;
+  margin: 0px 20px;
+  font-weight: 600;
+  font-size: 16px;
+
+  transition: all 0.5s ease-in-out;
+}
+.h-menus a:hover {
+  opacity: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-icon {
+  display: none;
+}
+@media (max-width: 1086px) {
+  .menu-icon {
+    display: block;
+  }
+  .h-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .h-menus {
+    color: black;
+    opacity: 100;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: 2px 2px 4px #888888;
+    transition: all 0.3s ease-in;
+    background-color: white;
+    position: absolute;
+    top: 5.5rem;
+    right: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .h-menus a {
+    color: black;
+    margin: 20px;
+  }
+  .h-menus a:active {
+    background-color: rgb(80, 75, 75);
+
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,80 @@
+* {
+  background-color: #28282b;
+}
+*::selection {
+  background-color: transparent;
+}
+.board-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+
+  border-radius: 30px;
+}
+.board-row::selection {
+  background-color: transparent;
+}
+.boardContainer {
+  margin-top: 1rem;
+  color: white;
+  width: 360px;
+  margin: 10rem auto;
+}
+.squareContainer {
+  border: 0.5px solid black;
+  box-shadow: 2px 2px 4px #0c0c0c;
+
+  height: 100px;
+  margin: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+}
+.squareContainer:hover {
+  color: black;
+  border: none;
+  filter: drop-shadow(-2px 4px 10px rgb(255, 0, 0));
+}
+.winner {
+  margin: 3rem;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.btn button {
+  border-radius: 20px 0px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  margin: 30px 0px;
+  transition: all 0.3s ease;
+}
+.btn button:hover {
+  transition: all 0.3s ease;
+
+  opacity: 0.8;
+}
+.boardContainer {
+  cursor: pointer;
+
+  height: 100px;
+}
+.boardContainer::after {
+  content: "By Zlaam";
+  font-weight: bold;
+  font-size: 25px;
+  z-index: 1;
+  position: relative;
+  left: 130px;
+  font-family: "Courier New", Courier, monospace;
+}
+.relative:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,41 @@
+.cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  display: block;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.3s ease-in-out;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid rgb(207, 205, 205);
+  border-radius: 50%;
+  animation: pulse 1s infinite alternate;
+}
+
+.dot {
+  background-color: rgb(11, 11, 56);
+  border: 1px solid gray;
+  height: 12px;
+  width: 12px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 968px) {
+  .cursor {
+    display: none;
+  }
+}

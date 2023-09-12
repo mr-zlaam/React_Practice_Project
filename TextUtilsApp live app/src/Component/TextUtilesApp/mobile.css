@@ -1,0 +1,95 @@
+/* Mobile.css */
+@media only screen and (max-width: 435px) and (min-width: 200px) {
+  .Darkmode {
+    position: relative;
+    top: 40px;
+    right: 180px;
+    width: fit-content;
+    margin: auto;
+  }
+  .Darkmode .dark:hover {
+    transition: 0.3s all ease-in-out;
+  }
+  header {
+    /* height: 90px; */
+    background: transparent;
+    filter: drop-shadow(0 0 0px blue);
+    width: 75vh;
+  }
+}
+@media only screen and (max-width: 1195px) and (min-width: 200px) {
+  header {
+    height: 100px;
+    background: transparent;
+    filter: drop-shadow(0 0 0px blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* width: 70vh; */
+  }
+  .lognav {
+    /* background: red; */
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    left: 60px;
+    bottom: 70px;
+  }
+  .main {
+    /* background: red; */
+    position: relative;
+    top: 50px;
+  }
+  .logo h4 {
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .Darkmode {
+    /* background: red; */
+    width: fit-content;
+    margin: auto;
+    /* right: -100px; */
+  }
+  .Darkmode .dark {
+    /* background: red; */
+    position: relative;
+    bottom: 70px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+  .mainBody {
+    /* background: red; */
+    width: 350px;
+    /* overflow: hidden; */
+  }
+
+  .mainBody label {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .summary {
+    width: 350px;
+    /* background: red; */
+  }
+  .prev {
+    /* background: red; */
+    width: 350px;
+    height: fit-content;
+  }
+  .child-prev {
+    width: 350px;
+    height: fit-content;
+    word-wrap: break-word;
+  }
+  .meassages .message,
+  .error {
+    position: relative;
+    bottom: 30px;
+    margin-bottom: 30px;
+    width: fit-content;
+    right: 40px;
+  }
+}

@@ -1,0 +1,53 @@
+.r-wrapper {
+  background-color: aliceblue;
+  width: 100%;
+  position: relative;
+  z-index: -1np;
+}
+.r-container {
+  width: 100%;
+  margin: auto;
+}
+.card-controller {
+  overflow-x: hidden;
+  width: 100%;
+  margin: auto;
+}
+.r-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.first-row {
+  margin: -2rem 0rem;
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+.imgs {
+  padding: 10px;
+  height: 10rem;
+  object-fit: cover;
+}
+.small-card {
+  object-fit: cover;
+  background-color: red;
+  box-shadow: 2px 2px 4px #888888;
+  cursor: pointer;
+}
+.small-card:focus {
+  transform: scale(1.1);
+}
+.small-card:hover {
+  background: rgb(203, 231, 255);
+  border: none;
+}

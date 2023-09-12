@@ -1,0 +1,275 @@
+/* Reset default styles and apply box-sizing */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Microsoft Edge */
+}
+
+/* Clear selection background */
+*::selection {
+  background: transparent;
+}
+
+/* Body background color */
+body {
+  background-color: rgb(12, 12, 73);
+}
+
+/* Header styles */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Adjust z-index as needed */
+  box-shadow: 2px 2px 4px #28282b;
+  background-color: rgb(16, 16, 63);
+  color: white;
+  filter: drop-shadow(0 0 6px blue);
+  height: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Main container for logo and navigation */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Logo and navigation styles */
+.lognav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 200px;
+  height: 50px;
+}
+
+.lognav ul {
+  display: flex;
+  align-items: center;
+}
+
+ul,
+li,
+a {
+  margin: 0px 13px;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Logo hover effect */
+.logo h4 {
+  font-size: 27px;
+}
+.logo h4:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  color: rgb(170, 170, 255);
+}
+
+/* Dark mode button styles */
+.dark {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 14px;
+  border-radius: 50px;
+  background-color: white;
+  transition: 0.3s all ease-in-out;
+}
+.Darkmode {
+  padding: 7px 15px;
+}
+.Darkmode .dark:hover {
+  transition: 0.3s all ease-in-out;
+  color: white;
+  background-color: black;
+  filter: drop-shadow(0 0 5px blue);
+  border-color: transparent;
+  cursor: pointer;
+}
+
+/* Body styling */
+
+/* Main content container */
+.mainBody {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  position: relative;
+  /* bottom: 30px; */
+}
+
+/* Label styles */
+label {
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  color: white;
+  width: fit-content;
+  position: relative;
+  bottom: 15px;
+}
+
+/* Textarea styles */
+textarea {
+  border-radius: 10px;
+  outline: none;
+  padding: 10px 15px;
+  font-weight: 550;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  border: 1px solid black;
+  transition: 0.2s all ease-in-out;
+  background-color: lightgray;
+  font-size: 16px;
+}
+
+textarea:focus {
+  transition: 0.2s all ease-in-out;
+  box-shadow: 6px 6px 14px black;
+  filter: drop-shadow(0 0 10px blue);
+}
+
+textarea::selection {
+  background: blue;
+  color: white;
+  filter: drop-shadow(0 0 10px blue);
+}
+
+/* Functional buttons styles */
+.buttonsAll {
+  width: fit-content;
+  margin-top: 10px;
+}
+
+.btni {
+  margin: 5px 10px;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background-color: white;
+  transition: 0.3s all ease-in-out;
+  border-color: #000;
+}
+
+.btni:hover {
+  transition: 0.3s all ease-in-out;
+  color: white;
+  background-color: black;
+  border-color: transparent;
+  filter: drop-shadow(0 0 5px blue);
+  cursor: pointer;
+}
+
+/* Summary section styles */
+.summary {
+  font-weight: 700;
+  font-family: Arial;
+  color: white;
+  width: fit-content;
+  font-size: 25px;
+}
+
+.child-summary {
+  color: rgb(170, 164, 164);
+  /* background: blue; */
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.mb-20 {
+  width: fit-content;
+  position: relative;
+  bottom: 10px;
+}
+
+.my-1,
+.summarys {
+  margin-top: 20px;
+}
+
+/* Preview section styles */
+.Prev {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.child-prev {
+  color: white;
+  width: 950px;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+}
+
+.child-prev::selection {
+  color: white;
+  background: rgb(121, 102, 204);
+}
+
+/* Hide the default scrollbars */
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(206, 213, 219);
+  border-radius: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(206, 213, 219);
+  border-radius: 5px;
+  border-radius: 20px;
+}
+
+.copyText {
+  color: green;
+}
+
+.meassages {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  position: relative;
+  top: 70px;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.copy {
+  color: white;
+}
+
+/* Messages and error styling */
+.meassages .error strong {
+  color: rgb(236, 17, 17);
+  height: 20px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+.meassages .message strong {
+  color: greenyellow;
+  text-align: center;
+}

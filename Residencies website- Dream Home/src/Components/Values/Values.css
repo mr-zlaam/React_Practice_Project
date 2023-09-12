@@ -1,0 +1,41 @@
+.v-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 89vh;
+}
+.accordians {
+  height: 20vh;
+}
+.acc-controller {
+  padding: 20px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 150px;
+}
+.imageContainer img {
+  box-shadow: 4px 4px 7px #888888;
+  object-fit: cover;
+}
+.head-acc {
+  margin: 5px 0px;
+  box-shadow: 2px 2px 4px #888888;
+}
+
+@media screen and (max-width: 1068px) {
+  .v-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 35vh;
+  }
+  .main-accordian {
+    margin-right: 50px;
+    margin-bottom: 3rem;
+  }
+  .values > span {
+    font-size: 1.8rem;
+  }
+}

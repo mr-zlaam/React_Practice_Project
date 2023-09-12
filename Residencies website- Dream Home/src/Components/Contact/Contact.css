@@ -1,0 +1,101 @@
+.Contact-wrap {
+  margin-bottom: 30px;
+  padding: 2rem 0rem;
+}
+.txt-contact {
+  padding: 10px 0px;
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+.txt-contact h1 {
+  font-weight: bold;
+  font-variant: small-caps;
+}
+.txt-contact p {
+  font-weight: 500;
+  padding: 0px 10px;
+  font-style: italic;
+  display: block;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.fcus {
+  display: flex;
+  flex-direction: column;
+}
+.form-controller {
+  width: 55%;
+  padding: 0px 30px;
+  margin: auto;
+  display: block;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+.fcus > input {
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  font-weight: 500;
+}
+input::selection {
+  background-color: blue;
+  color: white;
+}
+textarea {
+  background-color: transparent;
+
+  font-weight: 500;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  resize: none;
+  transition: all 0.3s ease;
+  outline: none;
+  display: block;
+}
+textarea:focus {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+textarea::selection {
+  background-color: blue;
+  color: white;
+}
+.fcus label {
+  transition: font-size 500ms ease-in-out;
+}
+.fcus:focus-within label {
+  font-size: 16px;
+}
+@media screen and (max-width: 800px) {
+  .form-controller {
+    width: 100%;
+  }
+  .txt-contact p {
+    font-weight: 500;
+    padding: 0px 15px;
+    font-style: italic;
+  }
+  textarea {
+    background-color: transparent;
+    padding: 20px 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    outline: none;
+    resize: none;
+    transition: all 0.3s ease;
+  }
+}

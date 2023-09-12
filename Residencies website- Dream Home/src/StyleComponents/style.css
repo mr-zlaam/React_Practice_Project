@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,600&display=swap");
+
+:root {
+  --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+  --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
+  --blue: #4066ff;
+  --black: #030311;
+  --light-blue: #eeeeff;
+  --shadow: 0px 23px 21px -8px rbga(136, 160, 255, 0.25);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+*::selection {
+  background-color: transparent;
+}
+.button {
+  padding: 0.6rem 1.4rem;
+  font-weight: 500;
+  background: var(--blue-gradient);
+  color: white;
+  border-radius: 2px 10px;
+  border: none;
+  transition: all 0.5s ease-in;
+}
+.button:hover {
+  transform: scale(1.1);
+
+  cursor: pointer;
+}
+.search-bar {
+  background-color: white;
+  border-radius: 10px 5px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-bar > input {
+  border: none;
+  outline: none;
+}
+/* Media Querries */
+@media (max-width: 1536px) {
+  .innerwidth {
+    /* max-width: 1280px; */
+    margin: auto;
+  }
+}
+@media (min-width: 640px) {
+  .paddings {
+    padding: 4rem;
+  }
+}
