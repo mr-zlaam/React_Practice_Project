@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.custom_scroll::-webkit-scrollbar {
+  height: 4px;
+  width: 3px;
+}
+.custom_scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom_scroll::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+
+  transition: all 0.3s ease-in-out;
+}
+.custom_scroll::-webkit-scrollbar-thumb:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: gray;
+}

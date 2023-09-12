@@ -1,0 +1,74 @@
+.app {
+  --main-color: #28282b;
+  --bg-color-1: #d4d4d4;
+  --bg-color-2: rgb(225, 222, 255);
+  --text-color-1: #28282b;
+  --text-color-2: #1d1d1d;
+}
+.app[data-theme="dark"] {
+  --main-color: gray;
+
+  --bg-color-1: #090d1b;
+  --bg-color-2: rgb(22, 21, 21);
+  --text-color-1: #e9e9ff;
+  --text-color-2: #0c0c0c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background: var(--main-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.app_calculator {
+  height: 550px;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.app_calculator_navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  border-radius: 20px;
+  height: 10%;
+  width: 100%;
+  padding: 10px;
+}
+.app_toggle {
+  height: 15px;
+  width: 30px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 2px 2px 4px #28282b;
+  cursor: pointer;
+}
+.app_circle {
+  height: 15px;
+  width: 15px;
+  background-color: black;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.app_circle_active {
+  height: 15px;
+  width: 15px;
+  background-color: black;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  margin-left: 15px;
+  cursor: pointer;
+}
