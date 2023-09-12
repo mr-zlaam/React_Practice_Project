@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* From Here Header or Navigaton Styling will start*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-top: 30px; */
+  box-shadow: 2px 2px 7px #28282b;
+  height: 72px;
+}
+nav {
+  margin-top: 20px;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  padding: 10px 20px;
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  transition: 0.5s all ease-in-out;
+}
+li a:hover {
+  transition: 0.5s all ease-in-out;
+  background-color: #28282b;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: white;
+}
+.logo img {
+  height: 4rem;
+  width: 7rem;
+}
+.btn button {
+  border-radius: 15px;
+  padding: 8px 15px;
+  background-color: #00000000;
+  font-weight: bold;
+  transition: 0.3s all ease-in-out;
+}
+.btn button:hover {
+  transition: 0.3s all ease-in-out;
+  color: white;
+  background-color: #28282b;
+  border-color: transparent;
+}
+
+/* From Here we will Start the main Section Styling  */
+
+.mainDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  /* height: calc(100vh - 72px); */
+}
+.strong {
+  /* background: red; */
+  width: 500px;
+  text-align: left;
+}
+.strong h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  line-height: 4.5rem;
+}
+.normal {
+  width: 300px;
+  text-align: justify;
+}
+.normal p {
+  font-variant: small-caps;
+  font-weight: 500;
+  font-size: 20px;
+}
+.shoes img {
+  height: 500px;
+}
+.logoAmazon img {
+  height: 70px;
+}
+.logoFacebook img {
+  height: 70px;
+
+  position: relative;
+  bottom: 6px;
+}
+.logosSection {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+.shop {
+  margin-bottom: 40px;
+
+  background: brown;
+  padding: 7px 15px;
+  width: fit-content;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-family: arial;
+  letter-spacing: 1px;
+  word-spacing: -5px;
+  color: white;
+}
+.cat:hover {
+  transition: 0.3s all ease-in-out;
+  background-color: #28282b;
+  color: white;
+}
+.cat {
+  padding: 7px 15px;
+  width: fit-content;
+  background: transparent;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-family: arial;
+  transition: 0.3s all ease-in-out;
+}
+.textlogos {
+  width: fit-content;
+  margin-left: 100px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.herotext {
+  width: fit-content;
+  margin: 0px auto;
+}

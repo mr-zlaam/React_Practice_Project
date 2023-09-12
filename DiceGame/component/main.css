@@ -1,0 +1,20 @@
+@media screen and (max-width: 1061px) {
+  .startbutton {
+    min-width: 50px;
+  }
+}
+.box {
+  cursor: pointer;
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btns {
+  width: fit-content;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* .image {
+  box-shadow: 2px 2px 4px #888888;
+} */

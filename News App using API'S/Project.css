@@ -1,0 +1,17 @@
+.mx-auto {
+  margin: 15rem auto;
+}
+.mx-auto img::selection {
+  background-color: transparent;
+}
+.no-underline {
+  transition: all 0.7s ease;
+}
+.no-underline:hover {
+  opacity: 0.7;
+  font-size: 16.5px;
+}
+.hero-bar {
+  color: red;
+  transition: all 0.7s ease;
+}
