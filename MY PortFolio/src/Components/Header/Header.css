@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Freehand&family=Kanit&display=swap");
+.section_header {
+  height: 100px;
+  position: relative;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-zoom: none;
+}
+header {
+  padding: 20px 0px;
+  position: fixed;
+  width: 100%;
+}
+.logo {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  margin-left: 50px;
+  transition: all 0.4s ease-in-out;
+}
+.logo h1 {
+  font-size: 30px;
+  font-family: Freehand;
+}
+.logo:hover {
+  opacity: 0.7;
+}
+.menu_icon {
+  margin-right: 50px;
+  background-color: #33333b;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  z-index: 1;
+  padding: 5px;
+  border-radius: 50%;
+}
+.menu_icon:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+.section_header {
+  animation: hero ease-in-out backwards 3s;
+  animation-delay: 1s;
+}
+.zlaam {
+  color: var(--text-color-1);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+@keyframes hero {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    position: relative;
+  }
+}

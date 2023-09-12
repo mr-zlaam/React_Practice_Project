@@ -1,0 +1,80 @@
+.work {
+  height: 100vh;
+  scroll-behavior: smooth;
+  animation: skill ease-in-out backwards 2s;
+}
+.work_controller {
+  padding: 20px;
+  user-select: none;
+}
+.projects > .font-extrabold {
+  font-family: Michroma;
+}
+.font-extrabold::selection {
+  background: gray;
+  color: white;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  place-items: center;
+}
+.share_card {
+  width: 100%;
+  height: 25rem;
+  box-shadow: 2px 2px 4px #888888;
+  border: 2px solid black;
+  object-fit: cover;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.share_card img {
+  cursor: pointer;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.share_card img:hover {
+  filter: blur(4px);
+  transform: scale(1.1);
+}
+.project_view {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 14px 0px;
+}
+.project_view a {
+  transition: all 0.4s ease;
+  text-decoration: none;
+  font-family: Michroma;
+  font-weight: bolder;
+  color: #28282b;
+  font-size: 12px;
+}
+.project_view > :hover {
+  transform: translateY(30%);
+  opacity: 0.7;
+}
+.project_view > a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+@media screen and (max-width: 852px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .work {
+    margin-top: 50px;
+    height: 150vh;
+  }
+}

@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+.about {
+  height: 100%;
+  background-color: var(--bg-color-1);
+  animation: skill ease-in-out backwards 2s;
+}
+.main_about {
+  display: flex;
+  justify-content: space-around;
+
+  gap: 5rem;
+  width: 100%;
+  margin: 50px 0px;
+}
+.resume {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-zoom: none;
+  border-bottom: 2px solid gray;
+}
+.resume > .resume_btn {
+  text-decoration: none;
+  color: rgb(90, 90, 90);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.downarrow {
+  color: rgb(105, 104, 104);
+  cursor: pointer;
+}
+
+.resume:hover {
+  opacity: 0.8;
+  transform: translateY(5px);
+  border-color: var();
+}
+
+.info_about {
+  width: 100%;
+  flex: 2;
+  margin-top: 30px;
+}
+.info_about ::selection {
+  background-color: gray;
+  color: white;
+}
+.info_about h1 {
+  font-family: "Bruno Ace", cursive;
+  font-weight: 900;
+  text-align: center;
+}
+.info_about p {
+  text-align: justify;
+  padding: 0px 20px;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+.skill {
+  width: fit-content;
+  margin: auto;
+  flex: 2;
+  padding: 0px 20px;
+  height: 100%;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-zoom: none;
+}
+.skill .para {
+  font-weight: bolder;
+  font-family: Kanit;
+  font-size: 25px;
+  letter-spacing: 2px;
+
+  flex: 3;
+}
+.web_chart {
+  height: 5px;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(227, 225, 37);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(227, 225, 37, 1) 0%,
+    rgba(148, 157, 233, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(227, 225, 37, 1) 0%,
+    rgba(148, 157, 233, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(227, 225, 37, 1) 0%,
+    rgba(148, 157, 233, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3e125",endColorstr="#949de9",GradientType=1);
+  box-shadow: 2px 2px 4px #888888;
+}
+.web_chart > .para_child {
+  padding: 8px 10px;
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.htmls {
+  width: 80%;
+}
+.css {
+  width: 75%;
+}
+.js {
+  width: 70%;
+}
+.tailwind {
+  width: 75%;
+}
+.bootstrap {
+  width: 60%;
+}
+.reactjs {
+  width: 76%;
+}
+.reactnative {
+  width: 70%;
+}
+.skill_controller {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@keyframes skill {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 901px) {
+  .main_about {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,189 @@
+.contact {
+  font-family: "Bruno Ace", cursive;
+  background-color: var(--bg-color-1);
+  font-weight: 900;
+
+  animation: skill ease-in-out backwards 2s;
+}
+.contact_controller {
+  display: flex;
+  justify-content: space-around;
+
+  overflow: hidden;
+  align-items: center;
+}
+.image {
+  user-select: none;
+  height: 100%;
+}
+.image img {
+  height: 70vh;
+  border-radius: 100rem;
+}
+.text-2xl {
+  font-family: Freehand;
+  text-align: center;
+}
+
+.pic h1::selection {
+  background-color: gray;
+  color: white;
+}
+
+.form_controller {
+  display: flex;
+
+  flex-direction: column;
+}
+form {
+  margin-top: 50px;
+}
+label {
+  cursor: pointer;
+}
+.lable {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color-1);
+  text-align: center;
+}
+.inputs {
+  height: 100%;
+  width: 100%;
+  flex: 6;
+}
+.icons {
+  flex: 1;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+
+  padding: 20px;
+  margin-top: 10px;
+}
+.icon_customize {
+  color: var(--text-color-1);
+}
+.icons {
+  width: 90%;
+
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: -4rem;
+  align-items: center;
+}
+.icon_child {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 5px;
+  border: 2px solid #28282b;
+  border-radius: 50%;
+}
+.icon_child:hover {
+  background-color: black;
+  transform: scale(1.2);
+}
+.color_icon {
+  transition: all 0.3s ease-in-out;
+}
+.color_icon:hover {
+  color: white;
+  background-color: black;
+}
+.input_boxes input,
+textarea {
+  background-color: #949494;
+  transition: all 0.3s ease;
+
+  color: #2e2e3f;
+  border-radius: 50px;
+  font-size: 20px;
+  box-shadow: 4px 4px 4px #28282b;
+}
+.input_boxes input {
+  margin: 15px 20px;
+
+  outline: none;
+  width: 90%;
+  padding: 15px 20px;
+  outline: none;
+}
+.input_boxes textarea {
+  margin: 0px 20px;
+  padding: 25px 50px;
+  outline: none;
+  resize: none;
+  width: 90%;
+}
+input:focus {
+  background-color: #bdbdbd;
+}
+textarea:focus {
+  background-color: #bdbdbd;
+}
+input::placeholder {
+  color: #6a696b;
+  text-align: center;
+  letter-spacing: 2px;
+  user-select: none;
+}
+textarea::placeholder {
+  user-select: none;
+  letter-spacing: 2px;
+  color: #28282b;
+  text-align: center;
+  color: #6a696b;
+}
+input::selection {
+  background-color: gray;
+  color: white;
+}
+textarea::selection {
+  background-color: gray;
+  color: white;
+}
+.contact_txt {
+  text-align: center;
+}
+
+.button {
+  padding: 10px 20px;
+  background: #adabab;
+  transition: all 0.3s ease-in-out;
+  color: #6a696b;
+  user-select: none;
+  box-shadow: 4px 4px 4px #28282b;
+}
+.button:hover {
+  background: #858485;
+}
+.button:active {
+  transition: all 0.1s ease-in-out;
+
+  transform: scale(1.1);
+}
+.button button {
+  color: #505050;
+}
+
+@media screen and (max-width: 1300px) {
+  .contact_controller {
+    flex-direction: column-reverse;
+  }
+
+  .pic {
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .pic img {
+    margin-bottom: 20px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 478px) {
+  .image img {
+    height: 50vh;
+    object-fit: cover;
+  }
+}

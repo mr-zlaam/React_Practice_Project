@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap");
+.section_home {
+  height: calc(100vh - 100px);
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  animation: home ease-in-out backwards 2s;
+  background-color: var(--bg-color-1);
+}
+
+@keyframes home {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section_home .left_txt h1::selection {
+  background: #999fb9;
+  color: #28282b;
+}
+
+.left_txt {
+  width: 100%;
+  text-align: center;
+  font-family: "Bruno Ace", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left_txt h1 {
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 4.5rem;
+}
+.normal {
+  font-size: 1.5rem;
+}
+.normal::selection {
+  background: #999fb9;
+  color: #28282b;
+}
+.and::selection {
+  background: transparent;
+}
+.right_txt {
+  font-family: "Bruno Ace", cursive;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  font-weight: bold;
+}
+.right_txt a {
+  color: var(--text-color-1);
+  padding: 20px 5px;
+  text-decoration: none;
+  user-select: none;
+}
+.right_txt > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.7rem;
+  transition: all 0.4s ease-in-out;
+}
+br::selection {
+  background: transparent;
+}
+
+.right_txt > a:hover {
+  opacity: 0.5;
+  transform: translateX(10px);
+}
+@media screen and (max-width: 458px) {
+  .left_txt h1 {
+    font-size: 3rem;
+  }
+  .normal {
+    font-size: 1.2rem;
+  }
+  .and {
+    font-size: 1rem;
+  }
+  .right_txt {
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .radial-gradient-container,
+  .section_home {
+    height: 100vh;
+  }
+  .about {
+    position: relative;
+    bottom: 40px;
+  }
+}
