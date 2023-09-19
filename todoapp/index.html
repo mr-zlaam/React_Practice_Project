@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/icons/list.png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Todo_App</title>
+  </head>
+  <body>
+    <main>
+      <div class="box custom-scroll">
+        <div class="title">
+          <h1>Todo-App</h1>
+        </div>
+        <div class="inputs">
+          <input
+            type="text"
+            name="todo"
+            id="item"
+            placeholder="Add Items"
+            autofocus
+            required
+          />
+        </div>
+        <div class="logo_div">
+          <p class="logo"></p>
+        </div>
+        <ul id="to-do-box" class="transparent-scroll"></ul>
+      </div>
+    </main>
+    <script>
+      const item = document.querySelector("#item");
+      const todobox = document.querySelector("#to-do-box");
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const savedTodos = JSON.parse(localStorage.getItem("todos")) || [];
+        savedTodos.forEach((todoText) => {
+          Addtodo(todoText);
+        });
+      });
+
+      item.addEventListener("keyup", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          const inputValue = item.value.trim();
+          if (inputValue !== "") {
+            Addtodo(inputValue);
+            item.value = "";
+            const savedTodos = JSON.parse(localStorage.getItem("todos")) || [];
+            const updatedTodos = [...savedTodos, inputValue];
+            localStorage.setItem("todos", JSON.stringify(updatedTodos));
+          }
+        }
+      });
+
+      const Addtodo = (itemText) => {
+        const listitem = document.createElement("li");
+        listitem.innerHTML = `
+          <li>
+            <img src="./icons/icon.svg" alt="icon" id="icon" />
+            ${itemText}
+          </li>
+        `;
+        listitem.querySelector("img").addEventListener("click", () => {
+          listitem.remove();
+          const savedTodos = JSON.parse(localStorage.getItem("todos")) || [];
+          const updatedTodos = savedTodos.filter((todo) => todo !== itemText);
+          localStorage.setItem("todos", JSON.stringify(updatedTodos));
+        });
+        todobox.appendChild(listitem);
+        listitem.addEventListener("click", function () {
+          listitem.classList.toggle("done");
+        });
+      };
+    </script>
+  </body>
+</html>
